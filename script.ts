@@ -2948,13 +2948,13 @@ function startSpacePortfolio(): void {
         const y =
           (event.clientY - bounds.top) / Math.max(bounds.height, 1) - 0.5;
 
-        card.style.setProperty('--rotate-x', `${(0.5 - y) * 2.2}deg`);
-        card.style.setProperty('--rotate-y', `${x * 2.8}deg`);
+        card.style.setProperty('--tilt-x', `${(0.5 - y) * 14}deg`);
+        card.style.setProperty('--tilt-y', `${x * 20}deg`);
       });
 
       card.addEventListener('pointerleave', () => {
-        card.style.removeProperty('--rotate-x');
-        card.style.removeProperty('--rotate-y');
+        card.style.setProperty('--tilt-x', '0deg');
+        card.style.setProperty('--tilt-y', '0deg');
       });
     });
   }

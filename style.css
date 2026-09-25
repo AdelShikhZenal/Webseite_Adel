@@ -1321,6 +1321,14 @@ main,
   transform: perspective(1100px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
 }
 
+.js-ready .interactive-card.reveal {
+  transition:
+    opacity .7s ease,
+    transform .3s cubic-bezier(.2, .8, .2, 1),
+    border-color .24s ease,
+    box-shadow .24s ease;
+}
+
 @keyframes orbit-turn { to { transform: translate(-50%, -50%) rotate(335deg); } }
 @keyframes orbit-turn-reverse { to { transform: translate(-50%, -50%) rotate(-308deg); } }
 
@@ -1609,8 +1617,20 @@ body.motion-paused *::after {
   .assistant-launcher { min-height: 46px; padding: .6rem .7rem; font-size: .67rem; }
   .assistant-panel { max-height: 75dvh; }
   .flight-settings-grid { gap: .45rem; }
-  .js-ready .interactive-card.reveal { transform: translateY(20px); }
-  .js-ready .interactive-card.reveal.is-visible { transform: translateY(0); }
+  .js-ready .interactive-card.reveal {
+  transform:
+    perspective(1100px)
+    translateY(20px)
+    rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg));
+}
+
+.js-ready .interactive-card.reveal.is-visible {
+  transform:
+    perspective(1100px)
+    rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg));
+}
 }
 
 @media (max-width: 390px) {
@@ -1634,4 +1654,30 @@ body.motion-paused *::after {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .js-ready .reveal, .js-ready .reveal.is-visible { opacity: 1; transform: none; }
   .black-hole-cursor::before, .black-hole-cursor::after, .black-hole-cursor span { animation: none !important; }
+}
+
+.identity-card.interactive-card {
+  transform:
+    perspective(900px)
+    rotateX(var(--rotate-x, 0deg))
+    rotateY(var(--rotate-y, 0deg));
+  transform-style: preserve-3d;
+  transition:
+    transform 160ms ease-out,
+    box-shadow 160ms ease-out;
+  will-change: transform;
+}
+
+.identity-card.interactive-card:hover {
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.32),
+    0 0 32px rgba(120, 180, 255, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .identity-card.interactive-card {
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
 }
