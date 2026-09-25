@@ -1321,13 +1321,7 @@ main,
   transform: perspective(1100px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
 }
 
-.js-ready .interactive-card.reveal {
-  transition:
-    opacity .7s ease,
-    transform .3s cubic-bezier(.2, .8, .2, 1),
-    border-color .24s ease,
-    box-shadow .24s ease;
-}
+
 
 @keyframes orbit-turn { to { transform: translate(-50%, -50%) rotate(335deg); } }
 @keyframes orbit-turn-reverse { to { transform: translate(-50%, -50%) rotate(-308deg); } }
