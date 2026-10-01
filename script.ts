@@ -62,7 +62,7 @@ declare global {
   }
 }
 
-const TEXTURE_ROOT = '/textures/';
+const TEXTURE_ROOT = `${import.meta.env.BASE_URL}textures/`;
 
 /*
  * Falls das Skript in index.html versehentlich zweimal eingebunden ist,
