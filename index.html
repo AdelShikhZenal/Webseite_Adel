@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +7,7 @@
     <meta name="theme-color" content="#070916" />
     <meta
       name="description"
-      content="Persönliches Portfolio von Adel Shikh Zenal: Softwaretesting, Testmanagement und digitale Barrierefreiheit."
+      content="Persönliches Portfolio von Adel Shikh Zenal: Softwaretesting, Testmanagement, Softwareentwicklung und digitale Barrierefreiheit."
     />
     <link rel="stylesheet" href="./style.css" />
     <title>Adel Shikh Zenal — Softwarequalität im Orbit</title>
@@ -15,782 +16,794 @@
   <body data-space-theme="cinematic">
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-    <div class="space-wash" aria-hidden="true"></div>
-    <canvas id="space-scene" aria-hidden="true"></canvas>
-    <div class="vignette" aria-hidden="true"></div>
+```
+<div class="space-wash" aria-hidden="true"></div>
+<canvas id="space-scene" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <a class="wordmark" href="#start" aria-label="Adel Shikh Zenal – Startseite">
-        <span class="wordmark-mark" aria-hidden="true">AZ</span>
-        <span class="wordmark-name">ADEL<span class="wordmark-dot">.</span></span>
-      </a>
+<header class="site-header">
+  <a class="wordmark" href="#start" aria-label="Adel Shikh Zenal – Startseite">
+    <span class="wordmark-mark" aria-hidden="true">AZ</span>
+    <span class="wordmark-name">ADEL<span class="wordmark-dot">.</span></span>
+  </a>
 
-      <button
-        class="menu-toggle"
-        id="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="site-nav"
-        aria-label="Navigation öffnen"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
+  <button
+    class="menu-toggle"
+    id="menu-toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="site-nav"
+    aria-label="Navigation öffnen"
+  >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="#profil">Profil</a>
-        <a href="#missionen">Erfahrung</a>
-        <a href="#barrierefreiheit">Bachelorarbeit</a>
-        <a href="#publikationen">Publikationen</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
+  <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+    <a href="#profil">Profil</a>
+    <a href="#missionen">Erfahrung</a>
+    <a href="#barrierefreiheit">Bachelorarbeit</a>
+    <a href="#publikationen">Publikationen</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 
-      <div class="header-controls">
-        <button
-          class="small-control"
-          id="cursor-toggle"
-          type="button"
-          aria-pressed="true"
-          title="Schwarzes-Loch-Cursor ein- oder ausschalten"
-        >
-          <span class="control-icon control-icon--black-hole" aria-hidden="true"></span>
-          <span id="cursor-label">Cursor: an</span>
-        </button>
+  <div class="header-controls">
+    <button
+      class="small-control"
+      id="cursor-toggle"
+      type="button"
+      aria-pressed="true"
+      title="Schwarzes-Loch-Cursor ein- oder ausschalten"
+    >
+      <span class="control-icon control-icon--black-hole" aria-hidden="true"></span>
+      <span id="cursor-label">Cursor: an</span>
+    </button>
 
-        <button
-          class="small-control"
-          id="motion-toggle"
-          type="button"
-          aria-pressed="false"
-          title="Bewegung pausieren oder fortsetzen"
-        >
-          <span class="control-icon control-icon--motion" aria-hidden="true">
-            <span></span>
-          </span>
-          <span id="motion-label">Bewegung pausieren</span>
-        </button>
-      </div>
-    </header>
+    <button
+      class="small-control"
+      id="motion-toggle"
+      type="button"
+      aria-pressed="false"
+      title="Bewegung pausieren oder fortsetzen"
+    >
+      <span class="control-icon control-icon--motion" aria-hidden="true">
+        <span></span>
+      </span>
+      <span id="motion-label">Bewegung pausieren</span>
+    </button>
+  </div>
+</header>
 
-    <main id="main">
-      <section class="hero" id="start" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="signal-dot" aria-hidden="true"></span>
-            SOFTWARETESTING
-            <span class="eyebrow-separator">/</span>
-            TESTMANAGEMENT
-            <span class="eyebrow-separator">/</span>
-            ACCESSIBILITY
-          </p>
+<main id="main">
+  <section class="hero" id="start" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span class="signal-dot" aria-hidden="true"></span>
+        SOFTWARETESTING
+        <span class="eyebrow-separator">/</span>
+        TESTMANAGEMENT
+        <span class="eyebrow-separator">/</span>
+        SOFTWAREENTWICKLUNG
+      </p>
 
-          <h1 id="hero-title">
-            Hi, ich bin <span class="text-glow">Adel.</span><br />
-            <span class="hero-heading-soft">Ich teste, bis Qualität sichtbar wird.</span>
-          </h1>
+      <h1 id="hero-title">
+        Hi, ich bin <span class="text-glow">Adel.</span><br />
+        <span class="hero-heading-soft">Ich teste, bis Qualität sichtbar wird.</span>
+      </h1>
 
-          <p class="hero-intro">
-            Ich verbinde sorgfältiges manuelles Testing mit explorativem Blick,
-            strukturiertem Testmanagement und gezielter Automatisierung.
-          </p>
+      <p class="hero-intro">
+        Ich verbinde sorgfältiges manuelles Testing mit explorativem Blick,
+        strukturiertem Testmanagement und gezielter Automatisierung.
+        Gleichzeitig entwickle ich meine technischen Kenntnisse kontinuierlich
+        in Richtung Softwareentwicklung weiter.
+      </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#missionen">
-              Meine Erfahrung <span aria-hidden="true">↘</span>
-            </a>
-            <a class="button button-quiet" href="#kontakt">
-              Kontakt aufnehmen <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-
-          <ul class="hero-facts" aria-label="Schwerpunkte">
-            <li><span class="fact-index">01</span> Exploratives Testing</li>
-            <li><span class="fact-index">02</span> Barrierefreiheit</li>
-            <li><span class="fact-index">03</span> Qualität im Team</li>
-          </ul>
-        </div>
-
-        <div class="hero-art" aria-hidden="true">
-          <div class="orbit orbit--outer"></div>
-          <div class="orbit orbit--middle"></div>
-          <div class="orbit orbit--inner"></div>
-          <span class="orbit-planet orbit-planet--one"></span>
-          <span class="orbit-planet orbit-planet--two"></span>
-          <div class="black-hole-visual"><span>AZ</span></div>
-          <span class="orbit-caption orbit-caption--top">CURIOSITY<br />IS THE ENGINE</span>
-          <span class="orbit-caption orbit-caption--bottom">MISSION · 01</span>
-        </div>
-
-        <aside class="mission-hud" aria-label="Status der simulierten Weltraumreise">
-          <div class="hud-topline">
-            <span><span class="hud-live-dot" aria-hidden="true"></span> FLIGHT LOG</span>
-            <span class="simulation-pill">SIMULATION</span>
-          </div>
-
-          <div class="hud-readouts">
-            <div>
-              <span class="hud-label">Route</span>
-              <strong id="route-name" aria-live="polite">Erde · Aufbruch</strong>
-            </div>
-            <div>
-              <span class="hud-label">Bordzeit</span>
-              <strong id="mission-time">T+00:00</strong>
-            </div>
-          </div>
-
-          <p class="hud-description" id="route-description" aria-live="polite">
-            Wir starten nahe der Erde. Sie füllt langsam das Sichtfenster,
-            zieht vorbei und bleibt hinter uns.
-          </p>
-
-          <div
-            class="route-progress"
-            id="route-progress"
-            role="progressbar"
-            aria-label="Fortschritt der simulierten Weltraumreise"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="0"
-          >
-            <span id="route-progress-fill"></span>
-          </div>
-
-          <details class="flight-settings">
-            <summary>
-              <span>Reiseeinstellungen</span>
-              <span class="settings-chevron" aria-hidden="true">⌄</span>
-            </summary>
-
-            <div class="flight-settings-grid">
-              <label for="travel-speed">
-                Reisetempo
-                <select id="travel-speed" name="travel-speed">
-                  <option value="slow">Langsam</option>
-                  <option value="normal" selected>Normal</option>
-                  <option value="fast">Schnell</option>
-                </select>
-              </label>
-
-              <label for="space-theme">
-                Hintergrund
-                <select id="space-theme" name="space-theme">
-                  <option value="cinematic" selected>Filmisch</option>
-                  <option value="minimal">Minimal</option>
-                </select>
-              </label>
-            </div>
-          </details>
-
-          <p class="sim-warning">
-            Künstlerische Simulation – keine Live-Ortung oder Echtzeit-Ephemeriden.
-          </p>
-        </aside>
-
-        <a class="scroll-cue" href="#profil">
-          <span class="scroll-cue-line" aria-hidden="true"></span>
-          <span>Weiter entdecken</span>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#missionen">
+          Meine Erfahrung <span aria-hidden="true">↘</span>
         </a>
-      </section>
+        <a class="button button-quiet" href="#kontakt">
+          Kontakt aufnehmen <span aria-hidden="true">↗</span>
+        </a>
+      </div>
 
-      <section
-        class="content-section profile-section"
-        id="profil"
-        aria-labelledby="profile-title"
-      >
-        <div class="section-heading reveal" data-reveal>
-          <p class="eyebrow">01 <span>/</span> CREW DOSSIER</p>
-          <h2 id="profile-title">Qualität beginnt<br />mit <em>Neugier.</em></h2>
-        </div>
-
-        <div class="profile-layout">
-          <div class="profile-copy reveal" data-reveal>
-            <p class="lead">
-              Ich arbeite strukturiert, sorgfältig und mit einem klaren Blick
-              für Risiken und Randfälle.
-            </p>
-            <p>
-              In meinen Projekten prüfe ich Anforderungen nicht nur Schritt für
-              Schritt: Ich hinterfrage Testfälle, suche gezielt nach
-              unerwartetem Verhalten und dokumentiere Fehler so, dass Teams
-              damit weiterarbeiten können. Ergänzend bringe ich mich in
-              Testautomatisierung und Frontend-Aufgaben ein.
-            </p>
-            <p>
-              Ich studiere Wirtschaftsinformatik an der Hochschule Landshut
-              und interessiere mich besonders dafür, wie verlässliche Software
-              für möglichst viele Menschen zugänglich wird.
-            </p>
-            <div class="profile-tags" aria-label="Profil-Schlagworte">
-              <span>Analytisch</span>
-              <span>Teamorientiert</span>
-              <span>Detailgenau</span>
-              <span>Neugierig</span>
-            </div>
-          </div>
-
-          <article
-            class="identity-card interactive-card reveal"
-            data-reveal
-            aria-label="Kurzprofil"
-          >
-            <div class="identity-card-top">
-              <span class="status-chip"><span aria-hidden="true"></span> CREW MEMBER</span>
-              <span class="identity-coordinates">48°32′ N · 12°09′ E</span>
-            </div>
-            <div class="identity-orbit" aria-hidden="true"><span>AZ</span></div>
-            <h3>Adel Shikh Zenal</h3>
-            <p>Softwaretesting · Testmanagement · digitale Barrierefreiheit</p>
-            <div class="identity-divider"></div>
-            <div class="identity-meta">
-              <span>STUDIUM</span>
-              <strong>B.Sc. Wirtschaftsinformatik</strong>
-            </div>
-            <div class="identity-meta">
-              <span>STANDORT</span>
-              <strong>Deutschland</strong>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section
-        class="content-section experience-section"
-        id="missionen"
-        aria-labelledby="experience-title"
-      >
-        <div class="section-heading reveal" data-reveal>
-          <p class="eyebrow">02 <span>/</span> MISSION HISTORY</p>
-          <h2 id="experience-title">Erfahrung, die<br /><em>Qualität sichert.</em></h2>
-          <p class="section-summary">
-            Mein Schwerpunkt liegt auf sorgfältiger Testausführung, operativem
-            Testmanagement und nachvollziehbarer Fehleranalyse.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <article
-            class="timeline-card timeline-card--featured interactive-card reveal"
-            data-reveal
-          >
-            <div class="timeline-marker" aria-hidden="true"><span></span></div>
-            <div class="timeline-date">12/2023 — 09/2026</div>
-            <div class="timeline-main">
-              <p class="timeline-kicker">ADESSO SE · MÜNCHEN</p>
-              <h3>Werkstudent IT-Testing &amp; Testmanagement</h3>
-              <p class="timeline-context">
-                Schwerpunkt: Modernisierungsprojekt KE beim Bayerischen
-                Staatsministerium der Justiz
-              </p>
-              <ul class="compact-list">
-                <li>
-                  Manuelle System-, Integrations- und Regressionstests sowie
-                  exploratives Ad-hoc-Testing
-                </li>
-                <li>
-                  Testfälle, Testsets und Testausführungen in Xray für Jira
-                  erstellen, pflegen und verbessern
-                </li>
-                <li>
-                  Fehler reproduzierbar beschreiben, priorisieren und mit
-                  Entwicklung und Fachbereich abstimmen
-                </li>
-                <li>
-                  Operatives Testmanagement, Testdokumentation und
-                  Unterstützung anderer Tester
-                </li>
-                <li>
-                  Ergänzende Cypress-Automatisierung und Frontend-Arbeiten;
-                  Einsatz von GitHub Actions, SonarCloud und SonarLint
-                </li>
-              </ul>
-              <div class="tool-row" aria-label="Verwendete Werkzeuge">
-                <span>Jira</span>
-                <span>Xray</span>
-                <span>Confluence</span>
-                <span>Cypress</span>
-                <span>GitHub Actions</span>
-              </div>
-            </div>
-            <span class="timeline-index" aria-hidden="true">01</span>
-          </article>
-
-          <article class="timeline-card interactive-card reveal" data-reveal>
-            <div class="timeline-marker" aria-hidden="true"><span></span></div>
-            <div class="timeline-date">10/2022 — 09/2023</div>
-            <div class="timeline-main">
-              <p class="timeline-kicker">POLIZEIVERWALTUNGSAMT BAYERN · STRAUBING</p>
-              <h3>Praktikum / Werkstudent</h3>
-              <p>
-                Manuelles Testen von Web- und Mobile-Anwendungen, Jira-Tickets,
-                Testausführungen und erste Testautomatisierung mit Cypress.
-              </p>
-              <div class="tool-row" aria-label="Verwendete Werkzeuge">
-                <span>Jira</span>
-                <span>Testmanagement</span>
-                <span>Cypress</span>
-              </div>
-            </div>
-            <span class="timeline-index" aria-hidden="true">02</span>
-          </article>
-
-          <article class="timeline-card interactive-card reveal" data-reveal>
-            <div class="timeline-marker" aria-hidden="true"><span></span></div>
-            <div class="timeline-date">10/2019 — 09/2022</div>
-            <div class="timeline-main">
-              <p class="timeline-kicker">SALCHOW UND BERGER · ESSENBACH</p>
-              <h3>Minijob</h3>
-              <p>Pflege und Aufbereitung von Excel-Listen.</p>
-              <div class="tool-row" aria-label="Verwendete Werkzeuge">
-                <span>Excel</span>
-              </div>
-            </div>
-            <span class="timeline-index" aria-hidden="true">03</span>
-          </article>
-        </div>
-
-        <div class="side-mission reveal" data-reveal>
-          <span class="side-mission-icon" aria-hidden="true">✦</span>
-          <p>
-            <strong>Kurzmission:</strong> Für „Demokratie stärken“ beim
-            Kreisjugendring Neumarkt i. d. OPf. habe ich einige Tage bei
-            Website-Entwicklung und Qualitätssicherung mit HTML, CSS,
-            JavaScript und Cypress unterstützt.
-          </p>
-        </div>
-      </section>
-
-      <section
-        class="content-section journey-section"
-        id="reise"
-        aria-labelledby="journey-title"
-      >
-        <div class="journey-heading reveal" data-reveal>
-          <div>
-            <p class="eyebrow">03 <span>/</span> VIRTUELLE ROUTE</p>
-            <h2 id="journey-title">Eine Reise durch<br /><em>neue Perspektiven.</em></h2>
-          </div>
-          <p class="section-summary">
-            Ein durchgehender, künstlerischer Vorwärtsflug. Wähle einen Abschnitt,
-            um die Route direkt anzusteuern.
-          </p>
-        </div>
-
-        <div class="route-stops" aria-label="Abschnitte der simulierten Weltraumreise">
-          <button
-            class="route-stop"
-            type="button"
-            data-route-index="0"
-            aria-pressed="true"
-          >
-            <span class="route-stop-number">01</span>
-            <span class="route-stop-name">Erde &amp; Sonne</span>
-            <span class="route-stop-note">Aufbruch und Sonnenvorbeiflug</span>
-          </button>
-
-          <button
-            class="route-stop"
-            type="button"
-            data-route-index="1"
-            aria-pressed="false"
-          >
-            <span class="route-stop-number">02</span>
-            <span class="route-stop-name">Innere Planeten</span>
-            <span class="route-stop-note">Merkur bis Mars</span>
-          </button>
-
-          <button
-            class="route-stop"
-            type="button"
-            data-route-index="2"
-            aria-pressed="false"
-          >
-            <span class="route-stop-number">03</span>
-            <span class="route-stop-name">Gasriesen</span>
-            <span class="route-stop-note">Jupiter und Saturn</span>
-          </button>
-
-          <button
-            class="route-stop"
-            type="button"
-            data-route-index="3"
-            aria-pressed="false"
-          >
-            <span class="route-stop-number">04</span>
-            <span class="route-stop-name">Äußeres Sonnensystem</span>
-            <span class="route-stop-note">Uranus bis Heliopause</span>
-          </button>
-
-          <button
-            class="route-stop"
-            type="button"
-            data-route-index="4"
-            aria-pressed="false"
-          >
-            <span class="route-stop-number">05</span>
-            <span class="route-stop-name">Deep Space</span>
-            <span class="route-stop-note">Milchstraße und Andromeda</span>
-          </button>
-        </div>
-      </section>
-
-      <section
-        class="content-section thesis-section"
-        id="barrierefreiheit"
-        aria-labelledby="thesis-title"
-      >
-        <div class="section-heading reveal" data-reveal>
-          <p class="eyebrow">04 <span>/</span> RESEARCH LOG</p>
-          <h2 id="thesis-title">Digitale Barrieren<br /><em>sichtbar machen.</em></h2>
-        </div>
-
-        <div class="thesis-layout">
-          <article class="thesis-card interactive-card reveal" data-reveal>
-            <div class="thesis-card-top">
-              <span class="thesis-icon" aria-hidden="true">⌁</span>
-              <span class="status-chip">BACHELORARBEIT</span>
-            </div>
-            <h3>
-              Verbesserung der Barrierefreiheit von Hochschulwebseiten durch
-              manuelle und automatisierte Tests
-            </h3>
-            <p>
-              In meiner Bachelorarbeit untersuche ich, wie manuelle Prüfungen
-              und automatisierte Werkzeuge gemeinsam dabei helfen, Barrieren
-              systematisch aufzudecken.
-            </p>
-            <div class="tool-row" aria-label="Tools aus der Bachelorarbeit">
-              <span>Pa11y</span>
-              <span>axe-core</span>
-              <span>Lighthouse</span>
-              <span>WAVE</span>
-              <span>CAAT</span>
-            </div>
-          </article>
-
-          <div class="thesis-notes reveal" data-reveal>
-            <p class="lead">
-              Automatisierung hilft beim Skalieren. Menschliche Bewertung
-              bleibt entscheidend.
-            </p>
-            <p>
-              Ich entwickle die Skripte aus der Arbeit weiter und kombiniere
-              sie mit Cypress. Ein konkreter nächster Fokus ist die
-              automatisierte Prüfung des SBF-Kommunalen Modells auf
-              Barrierefreiheit.
-            </p>
-            <div class="thesis-focus">
-              <span class="focus-orbit" aria-hidden="true">A11Y</span>
-              <div>
-                <strong>Mein Blick auf Accessibility</strong>
-                <span>Technische Checks · manuelle Prüfung · verständliche Empfehlungen</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="content-section skills-section"
-        id="kompetenzen"
-        aria-labelledby="skills-title"
-      >
-        <div class="section-heading reveal" data-reveal>
-          <p class="eyebrow">05 <span>/</span> TOOLKIT</p>
-          <h2 id="skills-title">Werkzeuge für<br /><em>verlässliche Software.</em></h2>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-panel skill-panel--wide interactive-card reveal" data-reveal>
-            <p class="panel-index">A / QUALITY</p>
-            <h3>Testing &amp; Testmanagement</h3>
-            <div class="skill-pills">
-              <span>Manuelles Testing</span>
-              <span>Exploratives Testing</span>
-              <span>Testfall-Design</span>
-              <span>Defect Management</span>
-              <span>Jira <small>sehr gut</small></span>
-              <span>Xray <small>sehr gut</small></span>
-              <span>Confluence <small>sehr gut</small></span>
-            </div>
-          </article>
-
-          <article class="skill-panel interactive-card reveal" data-reveal>
-            <p class="panel-index">B / AUTOMATION</p>
-            <h3>Automatisierung &amp; Accessibility</h3>
-            <div class="skill-pills">
-              <span>Cypress <small>gut</small></span>
-              <span>Pa11y <small>gut</small></span>
-              <span>axe-core <small>gut</small></span>
-              <span>Lighthouse <small>gut</small></span>
-              <span>WAVE <small>gut</small></span>
-              <span>CAAT <small>Grundkenntnisse</small></span>
-            </div>
-          </article>
-
-          <article class="skill-panel interactive-card reveal" data-reveal>
-            <p class="panel-index">C / ENGINEERING</p>
-            <h3>Entwicklung &amp; Daten</h3>
-            <div class="skill-pills">
-              <span>Git <small>gut</small></span>
-              <span>GitHub Actions</span>
-              <span>SonarCloud</span>
-              <span>SonarLint</span>
-              <span>SQL <small>Grundkenntnisse</small></span>
-              <span>Oracle <small>erste Einblicke</small></span>
-              <span>Liquibase <small>erste Einblicke</small></span>
-            </div>
-            <p class="skill-caption">
-              C · Java · TypeScript · JavaScript · HTML · CSS
-              <span>Grundlagen</span>
-            </p>
-          </article>
-
-          <article
-            class="skill-panel skill-panel--wide language-panel interactive-card reveal"
-            data-reveal
-          >
-            <p class="panel-index">D / COMMUNICATION</p>
-            <h3>Sprachen &amp; Zusammenarbeit</h3>
-            <div class="language-list">
-              <span><strong>Arabisch</strong><small>Muttersprache</small></span>
-              <span><strong>Kurdisch</strong><small>Muttersprache</small></span>
-              <span><strong>Deutsch</strong><small>C1</small></span>
-              <span><strong>Englisch</strong><small>B1/B2</small></span>
-            </div>
-          </article>
-        </div>
-
-        <div class="certification-line reveal" data-reveal>
-          <span class="certification-star" aria-hidden="true">✦</span>
-          <p>
-            <strong>Professional Scrum Developer I (PSD I)</strong>
-            <span>Scrum.org · 2024</span>
-          </p>
-        </div>
-      </section>
-
-      <section
-        class="content-section beyond-section"
-        id="jenseits"
-        aria-labelledby="beyond-title"
-      >
-        <div class="beyond-copy reveal" data-reveal>
-          <p class="eyebrow">06 <span>/</span> BEYOND THE SCREEN</p>
-          <h2 id="beyond-title">Auch außerhalb<br />der IT <em>neugierig.</em></h2>
-          <p class="lead">
-            Das Weltall, Antiquitäten und historische Dinge faszinieren mich.
-            In meiner Freizeit zeichne ich gern.
-          </p>
-          <p>
-            Von 2018 bis 2019 habe ich mich ehrenamtlich in der Kleiderkammer
-            Landshut engagiert und Dolmetschertätigkeiten bei Fala übernommen.
-          </p>
-        </div>
-
-        <div class="interest-constellation reveal" data-reveal aria-label="Interessen">
-          <span class="interest-node interest-node--space">
-            <span aria-hidden="true">✦</span> Weltall
-          </span>
-          <span class="interest-node interest-node--history">
-            <span aria-hidden="true">◌</span> Geschichte
-          </span>
-          <span class="interest-node interest-node--antiques">
-            <span aria-hidden="true">⌑</span> Antiquitäten
-          </span>
-          <span class="interest-node interest-node--drawing">
-            <span aria-hidden="true">⌁</span> Zeichnen
-          </span>
-          <span class="constellation-line constellation-line--one" aria-hidden="true"></span>
-          <span class="constellation-line constellation-line--two" aria-hidden="true"></span>
-          <span class="constellation-line constellation-line--three" aria-hidden="true"></span>
-        </div>
-      </section>
-
-      <section
-        class="content-section publications-section"
-        id="publikationen"
-        aria-labelledby="publications-title"
-      >
-        <div class="section-heading reveal" data-reveal>
-          <p class="eyebrow">07 <span>/</span> TRANSMISSIONS</p>
-          <h2 id="publications-title">Gedanken, die<br /><em>weiterreisen.</em></h2>
-        </div>
-
-        <div class="publication-grid">
-          <article class="publication-card interactive-card reveal" data-reveal>
-            <div class="publication-meta">
-              <span>ADESSO BLOG</span>
-              <time datetime="2024-06-13">13.06.2024</time>
-            </div>
-            <h3>Von Syrien nach Deutschland: Mein Weg in die IT</h3>
-            <p>
-              Ein persönlicher Einblick in meinen Weg ins IT-Testing und in die
-              Softwareentwicklung.
-            </p>
-            <a
-              href="https://www.adesso.de/de/news/blog/von-syrien-nach-deutschland-mein-weg-in-die-it.jsp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Beitrag lesen <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article
-            class="publication-card publication-card--accent interactive-card reveal"
-            data-reveal
-          >
-            <div class="publication-meta">
-              <span>ADESSO BLOG</span>
-              <time datetime="2026-06-30">30.06.2026</time>
-            </div>
-            <h3>
-              Barrierefreiheit automatisiert testen, und warum wir trotzdem
-              Menschen brauchen
-            </h3>
-            <p>
-              Warum automatisierte Checks wertvoll sind – und weshalb manuelle
-              Bewertung für echte Nutzbarkeit dazugehört.
-            </p>
-            <a
-              href="https://www.adesso.de/de/news/blog/barrierefreiheit-automatisiert-testen-und-warum-wir-trotzdem-menschen-brauchen.jsp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Beitrag lesen <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact-section" id="kontakt" aria-labelledby="contact-title">
-        <div class="contact-glow" aria-hidden="true"></div>
-        <div class="contact-content reveal" data-reveal>
-          <p class="eyebrow">08 <span>/</span> OPEN CHANNEL</p>
-          <h2 id="contact-title">Lass uns über<br /><em>Qualität sprechen.</em></h2>
-          <p>
-            Du möchtest über Testing, Barrierefreiheit oder eine mögliche
-            Zusammenarbeit sprechen? Ich freue mich auf deine Nachricht.
-          </p>
-          <a class="button button-primary contact-email" href="mailto:adelzenal96@gmail.com">
-            adelzenal96@gmail.com <span aria-hidden="true">↗</span>
-          </a>
-          <div class="social-links" aria-label="Weitere Profile">
-            <a
-              href="https://www.linkedin.com/in/adel-shikh-zenal-99a48425b"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn <span aria-hidden="true">↗</span>
-            </a>
-            <a
-              href="https://github.com/AdelShikhZenal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-        <div class="contact-stamp" aria-hidden="true">
-          <span>ENDLESS<br />CURIOSITY</span>
-          <b>AZ</b>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a class="footer-brand" href="#start">ADEL<span>.</span></a>
-      <p>Mit Neugier gebaut – und mit Blick auf Barrierefreiheit.</p>
-      <p>© <span id="current-year">2026</span> Adel Shikh Zenal</p>
-    </footer>
-
-    <aside class="assistant-widget" aria-label="Bord-Navigator">
-      <section
-        class="assistant-panel"
-        id="assistant-panel"
-        aria-labelledby="assistant-title"
-        hidden
-      >
-        <header class="assistant-header">
-          <div class="assistant-avatar" aria-hidden="true">✦</div>
-          <div>
-            <h2 id="assistant-title">Bord-Navigator</h2>
-            <p><span class="assistant-status-dot" aria-hidden="true"></span> Kostenlos · lokal · Demo</p>
-          </div>
-          <button
-            class="assistant-close"
-            id="assistant-close"
-            type="button"
-            aria-label="Bord-Navigator schließen"
-          >
-            ×
-          </button>
-        </header>
-
-        <p class="assistant-disclaimer">
-          Ich helfe bei der Orientierung auf dieser Seite. Ich nutze keine
-          Live-Weltraumdaten und bin kein generatives KI-Modell.
-        </p>
-
-        <div
-          class="assistant-messages"
-          id="assistant-messages"
-          role="log"
-          aria-live="polite"
-          aria-relevant="additions"
-        >
-          <p class="chat-message chat-message--bot">
-            Hallo! Ich kann dich zu Adels Erfahrung, Bachelorarbeit, Interessen
-            oder Kontakt führen. Frag mich gern – meine Antworten sind lokal
-            hinterlegt.
-          </p>
-        </div>
-
-        <div class="quick-questions" aria-label="Beispielfragen">
-          <button type="button" data-question="Was macht Adel beruflich?">Erfahrung</button>
-          <button type="button" data-question="Worum geht es in der Bachelorarbeit?">
-            Bachelorarbeit
-          </button>
-          <button type="button" data-question="Wo sind wir gerade im All?">Route</button>
-        </div>
-
-        <form class="assistant-form" id="assistant-form">
-          <label class="visually-hidden" for="assistant-input">
-            Frage an den Bord-Navigator
-          </label>
-          <input
-            id="assistant-input"
-            name="question"
-            type="text"
-            autocomplete="off"
-            placeholder="Frage stellen …"
-            maxlength="240"
-            required
-          />
-          <button type="submit" aria-label="Nachricht senden">
-            <span aria-hidden="true">↑</span>
-          </button>
-        </form>
-      </section>
-
-      <button
-        class="assistant-launcher"
-        id="assistant-launcher"
-        type="button"
-        aria-expanded="false"
-        aria-controls="assistant-panel"
-      >
-        <span class="launcher-icon" aria-hidden="true">✦</span>
-        <span>Frag den Bord-Navigator</span>
-        <span class="launcher-arrow" aria-hidden="true">↗</span>
-      </button>
-    </aside>
-
-    <div class="black-hole-cursor" id="black-hole-cursor" aria-hidden="true">
-      <span></span>
+      <ul class="hero-facts" aria-label="Schwerpunkte">
+        <li><span class="fact-index">01</span> Exploratives Testing</li>
+        <li><span class="fact-index">02</span> Barrierefreiheit</li>
+        <li><span class="fact-index">03</span> Qualität im Team</li>
+      </ul>
     </div>
 
-    <script type="module" src="./script.ts"></script>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orbit orbit--outer"></div>
+      <div class="orbit orbit--middle"></div>
+      <div class="orbit orbit--inner"></div>
+      <span class="orbit-planet orbit-planet--one"></span>
+      <span class="orbit-planet orbit-planet--two"></span>
+      <div class="black-hole-visual"><span>AZ</span></div>
+      <span class="orbit-caption orbit-caption--top">CURIOSITY<br />IS THE ENGINE</span>
+      <span class="orbit-caption orbit-caption--bottom">MISSION · 01</span>
+    </div>
+
+    <aside class="mission-hud" aria-label="Status der simulierten Weltraumreise">
+      <div class="hud-topline">
+        <span><span class="hud-live-dot" aria-hidden="true"></span> FLIGHT LOG</span>
+        <span class="simulation-pill">SIMULATION</span>
+      </div>
+
+      <div class="hud-readouts">
+        <div>
+          <span class="hud-label">Route</span>
+          <strong id="route-name" aria-live="polite">Erde · Aufbruch</strong>
+        </div>
+        <div>
+          <span class="hud-label">Bordzeit</span>
+          <strong id="mission-time">T+00:00</strong>
+        </div>
+      </div>
+
+      <p class="hud-description" id="route-description" aria-live="polite">
+        Wir starten nahe der Erde. Sie füllt langsam das Sichtfenster,
+        zieht vorbei und bleibt hinter uns.
+      </p>
+
+      <div
+        class="route-progress"
+        id="route-progress"
+        role="progressbar"
+        aria-label="Fortschritt der simulierten Weltraumreise"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <span id="route-progress-fill"></span>
+      </div>
+
+      <details class="flight-settings">
+        <summary>
+          <span>Reiseeinstellungen</span>
+          <span class="settings-chevron" aria-hidden="true">⌄</span>
+        </summary>
+
+        <div class="flight-settings-grid">
+          <label for="travel-speed">
+            Reisetempo
+            <select id="travel-speed" name="travel-speed">
+              <option value="slow">Langsam</option>
+              <option value="normal" selected>Normal</option>
+              <option value="fast">Schnell</option>
+            </select>
+          </label>
+
+          <label for="space-theme">
+            Hintergrund
+            <select id="space-theme" name="space-theme">
+              <option value="cinematic" selected>Filmisch</option>
+              <option value="minimal">Minimal</option>
+            </select>
+          </label>
+        </div>
+      </details>
+
+      <p class="sim-warning">
+        Künstlerische Simulation – keine Live-Ortung oder Echtzeit-Ephemeriden.
+      </p>
+    </aside>
+
+    <a class="scroll-cue" href="#profil">
+      <span class="scroll-cue-line" aria-hidden="true"></span>
+      <span>Weiter entdecken</span>
+    </a>
+  </section>
+
+  <section
+    class="content-section profile-section"
+    id="profil"
+    aria-labelledby="profile-title"
+  >
+    <div class="section-heading reveal" data-reveal>
+      <p class="eyebrow">01 <span>/</span> CREW DOSSIER</p>
+      <h2 id="profile-title">Qualität beginnt<br />mit <em>Neugier.</em></h2>
+    </div>
+
+    <div class="profile-layout">
+      <div class="profile-copy reveal" data-reveal>
+        <p class="lead">
+          Ich arbeite strukturiert, sorgfältig und mit einem klaren Blick
+          für Risiken und Randfälle.
+        </p>
+        <p>
+          In meinen Projekten prüfe ich Anforderungen nicht nur Schritt für
+          Schritt: Ich hinterfrage Testfälle, suche gezielt nach
+          unerwartetem Verhalten und dokumentiere Fehler so, dass Teams
+          damit weiterarbeiten können. Ergänzend bringe ich mich in
+          Testautomatisierung und Frontend-Aufgaben ein und entwickle meine
+          technischen Kenntnisse kontinuierlich weiter.
+        </p>
+        <p>
+          Mein Studium der Wirtschaftsinformatik an der Hochschule Landshut
+          habe ich 2026 abgeschlossen. Besonders interessieren mich
+          zuverlässige Software, moderne Webanwendungen und die Frage,
+          wie digitale Produkte für möglichst viele Menschen zugänglich
+          werden können.
+        </p>
+        <div class="profile-tags" aria-label="Profil-Schlagworte">
+          <span>Analytisch</span>
+          <span>Teamorientiert</span>
+          <span>Detailgenau</span>
+          <span>Neugierig</span>
+        </div>
+      </div>
+
+      <article
+        class="identity-card interactive-card reveal"
+        data-reveal
+        aria-label="Kurzprofil"
+      >
+        <div class="identity-card-top">
+          <span class="status-chip"><span aria-hidden="true"></span> CREW MEMBER</span>
+          <span class="identity-coordinates">48°32′ N · 12°09′ E</span>
+        </div>
+        <div class="identity-orbit" aria-hidden="true"><span>AZ</span></div>
+        <h3>Adel Shikh Zenal</h3>
+        <p>Softwaretesting · Testmanagement · Softwareentwicklung</p>
+        <div class="identity-divider"></div>
+        <div class="identity-meta">
+          <span>STUDIUM</span>
+          <strong>B.Sc. Wirtschaftsinformatik · abgeschlossen 2026</strong>
+        </div>
+        <div class="identity-meta">
+          <span>STANDORT</span>
+          <strong>Deutschland</strong>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section
+    class="content-section experience-section"
+    id="missionen"
+    aria-labelledby="experience-title"
+  >
+    <div class="section-heading reveal" data-reveal>
+      <p class="eyebrow">02 <span>/</span> MISSION HISTORY</p>
+      <h2 id="experience-title">Erfahrung, die<br /><em>Qualität sichert.</em></h2>
+      <p class="section-summary">
+        Mein Schwerpunkt liegt auf sorgfältiger Testausführung, operativem
+        Testmanagement und nachvollziehbarer Fehleranalyse.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <article
+        class="timeline-card timeline-card--featured interactive-card reveal"
+        data-reveal
+      >
+        <div class="timeline-marker" aria-hidden="true"><span></span></div>
+        <div class="timeline-date">12/2023 — 09/2026</div>
+        <div class="timeline-main">
+          <p class="timeline-kicker">ADESSO SE · MÜNCHEN</p>
+          <h3>Werkstudent IT-Testing &amp; Testmanagement</h3>
+          <p class="timeline-context">
+            Schwerpunkt: Modernisierungsprojekt KE beim Bayerischen
+            Staatsministerium der Justiz
+          </p>
+          <ul class="compact-list">
+            <li>
+              Manuelle System-, Integrations- und Regressionstests sowie
+              exploratives Ad-hoc-Testing
+            </li>
+            <li>
+              Testfälle, Testsets und Testausführungen in Xray für Jira
+              erstellen, pflegen und verbessern
+            </li>
+            <li>
+              Fehler reproduzierbar beschreiben, priorisieren und mit
+              Entwicklung und Fachbereich abstimmen
+            </li>
+            <li>
+              Operatives Testmanagement, Testdokumentation und
+              Unterstützung anderer Tester
+            </li>
+            <li>
+              Ergänzende Cypress-Automatisierung und Frontend-Arbeiten;
+              Einsatz von GitHub Actions, SonarCloud und SonarLint
+            </li>
+          </ul>
+          <div class="tool-row" aria-label="Verwendete Werkzeuge">
+            <span>Jira</span>
+            <span>Xray</span>
+            <span>Confluence</span>
+            <span>Cypress</span>
+            <span>GitHub Actions</span>
+          </div>
+        </div>
+        <span class="timeline-index" aria-hidden="true">01</span>
+      </article>
+
+      <article class="timeline-card interactive-card reveal" data-reveal>
+        <div class="timeline-marker" aria-hidden="true"><span></span></div>
+        <div class="timeline-date">10/2022 — 09/2023</div>
+        <div class="timeline-main">
+          <p class="timeline-kicker">POLIZEIVERWALTUNGSAMT BAYERN · STRAUBING</p>
+          <h3>Praktikum / Werkstudent</h3>
+          <p>
+            Manuelles Testen von Web- und Mobile-Anwendungen, Jira-Tickets,
+            Testausführungen und erste Testautomatisierung mit Cypress.
+          </p>
+          <div class="tool-row" aria-label="Verwendete Werkzeuge">
+            <span>Jira</span>
+            <span>Testmanagement</span>
+            <span>Cypress</span>
+          </div>
+        </div>
+        <span class="timeline-index" aria-hidden="true">02</span>
+      </article>
+
+      <article class="timeline-card interactive-card reveal" data-reveal>
+        <div class="timeline-marker" aria-hidden="true"><span></span></div>
+        <div class="timeline-date">10/2019 — 09/2022</div>
+        <div class="timeline-main">
+          <p class="timeline-kicker">SALCHOW UND BERGER · ESSENBACH</p>
+          <h3>Minijob</h3>
+          <p>Pflege und Aufbereitung von Excel-Listen.</p>
+          <div class="tool-row" aria-label="Verwendete Werkzeuge">
+            <span>Excel</span>
+          </div>
+        </div>
+        <span class="timeline-index" aria-hidden="true">03</span>
+      </article>
+    </div>
+
+    <div class="side-mission reveal" data-reveal>
+      <span class="side-mission-icon" aria-hidden="true">✦</span>
+      <p>
+        <strong>Kurzmission:</strong> Für „Demokratie stärken“ beim
+        Kreisjugendring Neumarkt i. d. OPf. habe ich einige Tage bei
+        Website-Entwicklung und Qualitätssicherung mit HTML, CSS,
+        JavaScript und Cypress unterstützt.
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="content-section journey-section"
+    id="reise"
+    aria-labelledby="journey-title"
+  >
+    <div class="journey-heading reveal" data-reveal>
+      <div>
+        <p class="eyebrow">03 <span>/</span> VIRTUELLE ROUTE</p>
+        <h2 id="journey-title">Eine Reise durch<br /><em>neue Perspektiven.</em></h2>
+      </div>
+      <p class="section-summary">
+        Ein durchgehender, künstlerischer Vorwärtsflug. Wähle einen Abschnitt,
+        um die Route direkt anzusteuern.
+      </p>
+    </div>
+
+    <div class="route-stops" aria-label="Abschnitte der simulierten Weltraumreise">
+      <button
+        class="route-stop"
+        type="button"
+        data-route-index="0"
+        aria-pressed="true"
+      >
+        <span class="route-stop-number">01</span>
+        <span class="route-stop-name">Erde &amp; Sonne</span>
+        <span class="route-stop-note">Aufbruch und Sonnenvorbeiflug</span>
+      </button>
+
+      <button
+        class="route-stop"
+        type="button"
+        data-route-index="1"
+        aria-pressed="false"
+      >
+        <span class="route-stop-number">02</span>
+        <span class="route-stop-name">Innere Planeten</span>
+        <span class="route-stop-note">Merkur bis Mars</span>
+      </button>
+
+      <button
+        class="route-stop"
+        type="button"
+        data-route-index="2"
+        aria-pressed="false"
+      >
+        <span class="route-stop-number">03</span>
+        <span class="route-stop-name">Gasriesen</span>
+        <span class="route-stop-note">Jupiter und Saturn</span>
+      </button>
+
+      <button
+        class="route-stop"
+        type="button"
+        data-route-index="3"
+        aria-pressed="false"
+      >
+        <span class="route-stop-number">04</span>
+        <span class="route-stop-name">Äußeres Sonnensystem</span>
+        <span class="route-stop-note">Uranus bis Heliopause</span>
+      </button>
+
+      <button
+        class="route-stop"
+        type="button"
+        data-route-index="4"
+        aria-pressed="false"
+      >
+        <span class="route-stop-number">05</span>
+        <span class="route-stop-name">Deep Space</span>
+        <span class="route-stop-note">Milchstraße und Andromeda</span>
+      </button>
+    </div>
+  </section>
+
+  <section
+    class="content-section thesis-section"
+    id="barrierefreiheit"
+    aria-labelledby="thesis-title"
+  >
+    <div class="section-heading reveal" data-reveal>
+      <p class="eyebrow">04 <span>/</span> RESEARCH LOG</p>
+      <h2 id="thesis-title">Digitale Barrieren<br /><em>sichtbar machen.</em></h2>
+    </div>
+
+    <div class="thesis-layout">
+      <article class="thesis-card interactive-card reveal" data-reveal>
+        <div class="thesis-card-top">
+          <span class="thesis-icon" aria-hidden="true">⌁</span>
+          <span class="status-chip">BACHELORARBEIT</span>
+        </div>
+        <h3>
+          Verbesserung der Barrierefreiheit von Hochschulwebseiten durch
+          manuelle und automatisierte Tests
+        </h3>
+        <p>
+          In meiner Bachelorarbeit habe ich untersucht, wie manuelle
+          Prüfungen und automatisierte Werkzeuge gemeinsam dabei helfen,
+          Barrieren systematisch aufzudecken.
+        </p>
+        <div class="tool-row" aria-label="Tools aus der Bachelorarbeit">
+          <span>Pa11y</span>
+          <span>axe-core</span>
+          <span>Lighthouse</span>
+          <span>WAVE</span>
+          <span>CAAT</span>
+          <span>Cypress</span>
+        </div>
+      </article>
+
+      <div class="thesis-notes reveal" data-reveal>
+        <p class="lead">
+          Automatisierung hilft beim Skalieren. Menschliche Bewertung
+          bleibt entscheidend.
+        </p>
+        <p>
+          In der Arbeit habe ich automatisierte Prüfungen mit manuellen
+          Tests kombiniert und die Ergebnisse hinsichtlich ihrer
+          Aussagekraft und ihres praktischen Nutzens betrachtet.
+          Ergänzend habe ich Cypress eingesetzt, um auch
+          authentifizierte Webanwendungen und Bereiche hinter einem
+          Benutzer-Login testen zu können.
+        </p>
+        <div class="thesis-focus">
+          <span class="focus-orbit" aria-hidden="true">A11Y</span>
+          <div>
+            <strong>Mein Blick auf Accessibility</strong>
+            <span>Technische Checks · manuelle Prüfung · verständliche Empfehlungen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="content-section skills-section"
+    id="kompetenzen"
+    aria-labelledby="skills-title"
+  >
+    <div class="section-heading reveal" data-reveal>
+      <p class="eyebrow">05 <span>/</span> TOOLKIT</p>
+      <h2 id="skills-title">Werkzeuge für<br /><em>verlässliche Software.</em></h2>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-panel skill-panel--wide interactive-card reveal" data-reveal>
+        <p class="panel-index">A / QUALITY</p>
+        <h3>Testing &amp; Testmanagement</h3>
+        <div class="skill-pills">
+          <span>Manuelles Testing</span>
+          <span>Exploratives Testing</span>
+          <span>Testfall-Design</span>
+          <span>Defect Management</span>
+          <span>Jira <small>sehr gut</small></span>
+          <span>Xray <small>sehr gut</small></span>
+          <span>Confluence <small>sehr gut</small></span>
+        </div>
+      </article>
+
+      <article class="skill-panel interactive-card reveal" data-reveal>
+        <p class="panel-index">B / AUTOMATION</p>
+        <h3>Automatisierung &amp; Accessibility</h3>
+        <div class="skill-pills">
+          <span>Cypress <small>gut</small></span>
+          <span>Pa11y <small>gut</small></span>
+          <span>axe-core <small>gut</small></span>
+          <span>Lighthouse <small>gut</small></span>
+          <span>WAVE <small>gut</small></span>
+          <span>CAAT <small>Grundkenntnisse</small></span>
+        </div>
+      </article>
+
+      <article class="skill-panel interactive-card reveal" data-reveal>
+        <p class="panel-index">C / ENGINEERING</p>
+        <h3>Entwicklung &amp; Daten</h3>
+        <div class="skill-pills">
+          <span>Git <small>gut</small></span>
+          <span>GitHub Actions</span>
+          <span>SonarCloud</span>
+          <span>SonarLint</span>
+          <span>SQL <small>Grundkenntnisse</small></span>
+          <span>Oracle <small>erste Einblicke</small></span>
+          <span>Liquibase <small>erste Einblicke</small></span>
+        </div>
+        <p class="skill-caption">
+          C · Java · TypeScript · JavaScript · HTML · CSS
+          <span>Grundlagen</span>
+        </p>
+      </article>
+
+      <article
+        class="skill-panel skill-panel--wide language-panel interactive-card reveal"
+        data-reveal
+      >
+        <p class="panel-index">D / COMMUNICATION</p>
+        <h3>Sprachen &amp; Zusammenarbeit</h3>
+        <div class="language-list">
+          <span><strong>Arabisch</strong><small>Muttersprache</small></span>
+          <span><strong>Kurdisch</strong><small>Muttersprache</small></span>
+          <span><strong>Deutsch</strong><small>C1</small></span>
+          <span><strong>Englisch</strong><small>B1/B2</small></span>
+        </div>
+      </article>
+    </div>
+
+    <div class="certification-line reveal" data-reveal>
+      <span class="certification-star" aria-hidden="true">✦</span>
+      <p>
+        <strong>Professional Scrum Developer I (PSD I)</strong>
+        <span>Scrum.org · 2024</span>
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="content-section beyond-section"
+    id="jenseits"
+    aria-labelledby="beyond-title"
+  >
+    <div class="beyond-copy reveal" data-reveal>
+      <p class="eyebrow">06 <span>/</span> BEYOND THE SCREEN</p>
+      <h2 id="beyond-title">Auch außerhalb<br />der IT <em>neugierig.</em></h2>
+      <p class="lead">
+        Das Weltall, Antiquitäten und historische Dinge faszinieren mich.
+        In meiner Freizeit zeichne ich gern.
+      </p>
+      <p>
+        Von 2018 bis 2019 habe ich mich ehrenamtlich in der Kleiderkammer
+        Landshut engagiert und Dolmetschertätigkeiten bei Fala übernommen.
+      </p>
+    </div>
+
+    <div class="interest-constellation reveal" data-reveal aria-label="Interessen">
+      <span class="interest-node interest-node--space">
+        <span aria-hidden="true">✦</span> Weltall
+      </span>
+      <span class="interest-node interest-node--history">
+        <span aria-hidden="true">◌</span> Geschichte
+      </span>
+      <span class="interest-node interest-node--antiques">
+        <span aria-hidden="true">⌑</span> Antiquitäten
+      </span>
+      <span class="interest-node interest-node--drawing">
+        <span aria-hidden="true">⌁</span> Zeichnen
+      </span>
+      <span class="constellation-line constellation-line--one" aria-hidden="true"></span>
+      <span class="constellation-line constellation-line--two" aria-hidden="true"></span>
+      <span class="constellation-line constellation-line--three" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <section
+    class="content-section publications-section"
+    id="publikationen"
+    aria-labelledby="publications-title"
+  >
+    <div class="section-heading reveal" data-reveal>
+      <p class="eyebrow">07 <span>/</span> TRANSMISSIONS</p>
+      <h2 id="publications-title">Gedanken, die<br /><em>weiterreisen.</em></h2>
+    </div>
+
+    <div class="publication-grid">
+      <article class="publication-card interactive-card reveal" data-reveal>
+        <div class="publication-meta">
+          <span>ADESSO BLOG</span>
+          <time datetime="2024-06-13">13.06.2024</time>
+        </div>
+        <h3>Von Syrien nach Deutschland: Mein Weg in die IT</h3>
+        <p>
+          Ein persönlicher Einblick in meinen Weg ins IT-Testing und in die
+          Softwareentwicklung.
+        </p>
+        <a
+          href="https://www.adesso.de/de/news/blog/von-syrien-nach-deutschland-mein-weg-in-die-it.jsp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Beitrag lesen <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+
+      <article
+        class="publication-card publication-card--accent interactive-card reveal"
+        data-reveal
+      >
+        <div class="publication-meta">
+          <span>ADESSO BLOG</span>
+          <time datetime="2026-06-30">30.06.2026</time>
+        </div>
+        <h3>
+          Barrierefreiheit automatisiert testen, und warum wir trotzdem
+          Menschen brauchen
+        </h3>
+        <p>
+          Warum automatisierte Checks wertvoll sind – und weshalb manuelle
+          Bewertung für echte Nutzbarkeit dazugehört.
+        </p>
+        <a
+          href="https://www.adesso.de/de/news/blog/barrierefreiheit-automatisiert-testen-und-warum-wir-trotzdem-menschen-brauchen.jsp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Beitrag lesen <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact-section" id="kontakt" aria-labelledby="contact-title">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <div class="contact-content reveal" data-reveal>
+      <p class="eyebrow">08 <span>/</span> OPEN CHANNEL</p>
+      <h2 id="contact-title">Lass uns über<br /><em>Qualität sprechen.</em></h2>
+      <p>
+        Du möchtest über Testing, Barrierefreiheit, Softwareentwicklung
+        oder eine mögliche Zusammenarbeit sprechen? Ich freue mich auf
+        deine Nachricht.
+      </p>
+      <a class="button button-primary contact-email" href="mailto:adelzenal96@gmail.com">
+        adelzenal96@gmail.com <span aria-hidden="true">↗</span>
+      </a>
+      <div class="social-links" aria-label="Weitere Profile">
+        <a
+          href="https://www.linkedin.com/in/adel-shikh-zenal-99a48425b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+        <a
+          href="https://github.com/AdelShikhZenal"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-stamp" aria-hidden="true">
+      <span>ENDLESS<br />CURIOSITY</span>
+      <b>AZ</b>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a class="footer-brand" href="#start">ADEL<span>.</span></a>
+  <p>Mit Neugier gebaut – und mit Blick auf Barrierefreiheit.</p>
+  <p>© <span id="current-year">2026</span> Adel Shikh Zenal</p>
+</footer>
+
+<aside class="assistant-widget" aria-label="Bord-Navigator">
+  <section
+    class="assistant-panel"
+    id="assistant-panel"
+    aria-labelledby="assistant-title"
+    hidden
+  >
+    <header class="assistant-header">
+      <div class="assistant-avatar" aria-hidden="true">✦</div>
+      <div>
+        <h2 id="assistant-title">Bord-Navigator</h2>
+        <p><span class="assistant-status-dot" aria-hidden="true"></span> Kostenlos · lokal · Demo</p>
+      </div>
+      <button
+        class="assistant-close"
+        id="assistant-close"
+        type="button"
+        aria-label="Bord-Navigator schließen"
+      >
+        ×
+      </button>
+    </header>
+
+    <p class="assistant-disclaimer">
+      Ich helfe bei der Orientierung auf dieser Seite. Ich nutze keine
+      Live-Weltraumdaten und bin kein generatives KI-Modell.
+    </p>
+
+    <div
+      class="assistant-messages"
+      id="assistant-messages"
+      role="log"
+      aria-live="polite"
+      aria-relevant="additions"
+    >
+      <p class="chat-message chat-message--bot">
+        Hallo! Ich kann dich zu Adels Erfahrung, Bachelorarbeit, Interessen
+        oder Kontakt führen. Frag mich gern – meine Antworten sind lokal
+        hinterlegt.
+      </p>
+    </div>
+
+    <div class="quick-questions" aria-label="Beispielfragen">
+      <button type="button" data-question="Was macht Adel beruflich?">Erfahrung</button>
+      <button type="button" data-question="Worum geht es in der Bachelorarbeit?">
+        Bachelorarbeit
+      </button>
+      <button type="button" data-question="Wo sind wir gerade im All?">Route</button>
+    </div>
+
+    <form class="assistant-form" id="assistant-form">
+      <label class="visually-hidden" for="assistant-input">
+        Frage an den Bord-Navigator
+      </label>
+      <input
+        id="assistant-input"
+        name="question"
+        type="text"
+        autocomplete="off"
+        placeholder="Frage stellen …"
+        maxlength="240"
+        required
+      />
+      <button type="submit" aria-label="Nachricht senden">
+        <span aria-hidden="true">↑</span>
+      </button>
+    </form>
+  </section>
+
+  <button
+    class="assistant-launcher"
+    id="assistant-launcher"
+    type="button"
+    aria-expanded="false"
+    aria-controls="assistant-panel"
+  >
+    <span class="launcher-icon" aria-hidden="true">✦</span>
+    <span>Frag den Bord-Navigator</span>
+    <span class="launcher-arrow" aria-hidden="true">↗</span>
+  </button>
+</aside>
+
+<div class="black-hole-cursor" id="black-hole-cursor" aria-hidden="true">
+  <span></span>
+</div>
+
+<script type="module" src="./script.ts"></script>
+```
+
   </body>
 </html>
